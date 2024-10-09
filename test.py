@@ -7,7 +7,7 @@ import win32com.client as win32
 def update_excel(data):
     try:
         # โหลดไฟล์ Excel
-        file_path = 'C:\Users\makhu\OneDrive\Py\pyforexcelggSheet/ใบรับรองแพทย์ 5 โรค.xlsx'
+        file_path = 'C:/Users/makhu/OneDrive/Py/pyforexcelggSheet/ใบรับรองแพทย์ 5 โรค.xlsx'
         workbook = load_workbook(filename=file_path)
         sheet = workbook.active
         
@@ -36,7 +36,7 @@ def update_excel(data):
 # ฟังก์ชันสำหรับสั่งพิมพ์หน้าแรกของไฟล์ Excel
 def print_excel():
     try:
-        file_path = 'C:\Users\makhu\OneDrive\Py\pyforexcelggSheet/ใบรับรองแพทย์ 5 โรค.xlsx'
+        file_path = 'C:/Users/makhu/OneDrive/Py/pyforexcelggSheet/ใบรับรองแพทย์ 5 โรค.xlsx'
         excel = win32.Dispatch('Excel.Application')
         wb = excel.Workbooks.Open(file_path)
         ws = wb.Sheets(1)
